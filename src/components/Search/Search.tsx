@@ -1,8 +1,8 @@
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 import useUrlSyncQuery from "../../hooks/useUrlSyncQuery";
-import "./styles.css";
 import SearchSuggestions from "./SearchSuggestions";
 import { useEffect, useRef, useState } from "react";
+import "./styles.css";
 
 interface ISearchProps {
   onSearch: (city: string) => void;

@@ -1,7 +1,12 @@
 import { useCallback, useEffect, useState } from "react";
 
+const getInitialQuery = () => {
+  const url = new URL(`${window.location}`);
+  const queryParam = url.searchParams.get("query");
+  return queryParam ?? "Delhi";
+};
 const useUrlSyncQuery = () => {
-  const [searchQuery, setSearchQuery] = useState("Delhi");
+  const [searchQuery, setSearchQuery] = useState(getInitialQuery);
 
   const handlePopState = () => {
     const url = new URL(`${window.location}`);
@@ -21,6 +26,10 @@ const useUrlSyncQuery = () => {
     },
     []
   );
+
+  useEffect(() => {
+    setSearchQuery(getInitialQuery);
+  }, []);
 
   // Listen for back/forward button clicks
   useEffect(() => {
