@@ -39,7 +39,7 @@ const useUrlSyncQuery = () => {
     return () => {
       window.removeEventListener("popstate", handlePopState);
     };
-  }, [updateURL]);
+  }, []);
 
   return {
     onChange: handleInputChange,
