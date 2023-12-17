@@ -1,0 +1,68 @@
+.details-container {
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-duration: 300ms;
+}
+.details-top {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.map-icon {
+  height: 24px;
+}
+.details-mid {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+.temp {
+  font-size: 50px;
+  margin: 10px;
+}
+
+.icon-container {
+  height: 80px;
+  width: 80px;
+}
+.icon {
+  height: 100%;
+}
+
+.details-footer {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tag {
+  padding: 2px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid rgb(196, 196, 196);
+  width: fit-content;
+  height: fit-content;
+}
+.blue {
+  background-color: rgb(166, 231, 255);
+  border-color: rgb(3, 101, 137);
+  color: rgb(3, 101, 137);
+}
+
+.yellow {
+  background-color: rgb(230, 255, 166);
+  border-color: rgb(137, 112, 3);
+  color: rgb(137, 112, 3);
+}
+.purple {
+  background-color: rgb(255, 197, 249);
+  border-color: rgb(137, 3, 132);
+  color: rgb(137, 3, 132);
+}
+
+.wind {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
